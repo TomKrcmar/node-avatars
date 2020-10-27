@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<style>
+img {
+	width: 200px;
+	height: 200px;
+	image-rendering: pixelated;
+	background-color: black;
+}
+		</style>
+		<script src="./dist/dev/hash-avatars.js"></script>
+		<script>
+window.addEventListener('load', () => {
+	HashAvatars.Pixel.applyToImage('Hello, World!', 5, 5, {}, document.getElementById('test'));
+});
+		</script>
+	</head>
+	<body>
+		<img id="test" />
+	</body>
+</html>
