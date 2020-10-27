@@ -6,6 +6,7 @@ export default class PixelAvatarGenerator extends AvatarGenerator {
 
 	generateImpl(seed, avatar, options) {
 		const { data, width, height } = avatar;
+		options = Object.assign({}, options);
 		
 		const halfWidth = Math.ceil(width / 2);
 		//const even = (width+1) % 2;

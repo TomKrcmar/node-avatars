@@ -3,6 +3,11 @@ export default class Driver {
 	constructor(generator) {
 		this.generator = generator;
 	}
+	
+	generate(seed, width, height, options) {
+		const avatar = this.generator.generate(seed, width, height, options);
+		return avatar.data;
+	}
 
 	dataUrl(seed, width, height, options) {
 		const avatar = this.generator.generate(seed, width, height, options);
