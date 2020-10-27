@@ -4,6 +4,7 @@
 	"description": "Generate avatar images of various types with zero dependencies",
 	"author": "Thomas Krcmar (tomkrcmar@gmail.com)",
 	"license": "ISC",
+	"repository": "github:TomKrcmar/node-avatars",
 	"main": "./src/index.js",
 	"scripts": {
 		"dev": "rollup --config --environment NODE_ENV:development --watch",
