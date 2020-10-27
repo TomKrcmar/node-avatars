@@ -17,8 +17,9 @@ export default class Driver {
 		const canvas = document.createElement('canvas');
 		canvas.width = width;
 		canvas.height = height;
+		const imageData = new ImageData(new Uint8ClampedArray(avatar.data), width, height);
 		const ctx = canvas.getContext('2d');
-		ctx.putImageData(avatar.data, 0, 0);
+		ctx.putImageData(imageData, 0, 0);
 		return canvas.toDataURL();
 	}
 	

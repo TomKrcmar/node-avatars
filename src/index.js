@@ -7,4 +7,4 @@
 import Driver from './Driver';
 import PixelAvatarGenerator from './PixelAvatarGenerator';
 
-export const Pixel = new Driver(PixelAvatarGenerator);
+export const Pixel = new Driver(new PixelAvatarGenerator());
