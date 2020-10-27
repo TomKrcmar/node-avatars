@@ -1,0 +1,9 @@
+{
+	"plugins": [
+		["conditional-compile", {
+			"define": {
+				_DEF_ENABLE_WEBGL_DEBUG: true
+			}
+		}]
+	]
+}

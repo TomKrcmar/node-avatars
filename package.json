@@ -1,0 +1,21 @@
+{
+	"name": "node-avatars",
+	"version": "1.0.0",
+	"description": "Generate avatar images of various types with zero dependencies",
+	"author": "Thomas Krcmar (tomkrcmar@gmail.com)",
+	"license": "ISC",
+	"main": "./src/index.js",
+	"scripts": {
+		"dev": "rollup --config --environment NODE_ENV:development --watch",
+		"prod": "rollup --config --environment NODE_ENV:production"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/core": "^7.12.3",
+		"@rollup/plugin-babel": "^5.2.1",
+		"@rollup/plugin-node-resolve": "^10.0.0",
+		"babel-plugin-conditional-compile": "0.0.5",
+		"rollup": "^2.32.1",
+		"rollup-plugin-terser": "^7.0.2"
+	}
+}
